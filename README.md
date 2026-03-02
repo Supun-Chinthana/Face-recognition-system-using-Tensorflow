@@ -20,7 +20,7 @@ The laptop in this case manages the model and everything related to processing t
 For this purpose I have utilized google colabs as I do not posess the computational power to train such a model. The model is created using TensorFlow and is a Convultional Neural Network. As the dataset I have utilized an open source dataset from kaggle, https://www.kaggle.com/datasets/ashwingupta3012/male-and-female-faces-dataset
 
 ## Preparing the dataset
-The dataset itself contains about 5500 faces of random people which in itself is no use to me. So I 3 about 20 second video clips of my face in various lighting conditions and extracted the frames of them. This gave me about 2000 images of myself which then I copied to make 6000 total images of myself. Then after joining the two datasets, I used a random multiplier to simulate even more diverse lighting conditions. After this I ran the function detect_face on each image and extracted only the best images out of them. This provided me with good quality images.
+The dataset itself contains about 5500 faces of random people which in itself is no use to me. So I created 3, 20 second video clips of my face in various lighting conditions and extracted the frames of them. This gave me about 2000 images of myself which then I copied to make 6000 total images of myself. Then after joining the two datasets, I used a random multiplier to simulate even more diverse lighting conditions. After this I ran the function detect_face on each image and extracted only the best images out of them. This provided me with good quality images.
 
 ## The model
 Here I used a CNN model with 3 Conv 2D layers and 2 dense layers at the end with a sigmoid function to obtain the strength of the signal. 
